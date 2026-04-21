@@ -1,0 +1,593 @@
+/* ============================================================
+   PhoneUI.uss  —  Don't Worry, Mom
+   Portrait phone frame: 540 × 960 reference pixels (height-matched)
+   ============================================================ */
+
+/* ── PHONE FRAME ─────────────────────────────────────────── */
+
+.phone-frame {
+    width: 540px;
+    height: 960px;
+    background-color: rgb(5, 5, 15);
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* ── STATUS BAR ──────────────────────────────────────────── */
+
+.status-bar {
+    height: 122px;
+    flex-direction: column;
+    flex-shrink: 0;
+    background-color: rgb(14, 14, 33);
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(33, 33, 71);
+}
+
+.status-info {
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    padding-left: 14px;
+    padding-right: 12px;
+}
+
+.avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: rgb(29, 78, 55);
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.avatar-letter {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+}
+
+.contact-details {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-name {
+    font-size: 22px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2px;
+}
+
+.call-status {
+    font-size: 15px;
+    color: rgb(61, 213, 112);
+}
+
+.call-meta {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.timer {
+    font-size: 19px;
+    color: rgb(61, 213, 112);
+    margin-bottom: 2px;
+}
+
+.turn-label {
+    font-size: 16px;
+    color: rgb(165, 165, 190);
+}
+
+/* ── METER BAND ──────────────────────────────────────────── */
+
+.meter-band {
+    height: 34px;
+    flex-direction: row;
+    flex-shrink: 0;
+    background-color: rgb(10, 10, 26);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.meter-row {
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 4px;
+}
+
+.meter-row-right {
+    padding-right: 0;
+    padding-left: 4px;
+    flex-direction: row;
+}
+
+.meter-label {
+    font-size: 11px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    width: 66px;
+    flex-shrink: 0;
+    -unity-text-align: middle-left;
+    transition-duration: 0.25s;
+}
+
+.meter-label-right {
+    -unity-text-align: middle-right;
+}
+
+.meter-label-critical {
+    color: rgb(255, 60, 40);
+}
+
+.meter-track {
+    flex: 1;
+    height: 10px;
+    background-color: rgb(28, 28, 36);
+    overflow: hidden;
+    position: relative;
+}
+
+.meter-normal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+}
+
+.worry-color  { background-color: rgb(242, 158, 26);  }
+.sus-color    { background-color: rgb(38, 191, 242);  }
+
+.meter-danger {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 80%;
+    width: 0%;
+    background-color: rgb(255, 31, 20);
+}
+
+.danger-tick {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 80%;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 76);
+}
+
+/* ── DANGER BANNER ───────────────────────────────────────── */
+
+.danger-banner {
+    height: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    display: none;
+    background-color: rgb(35, 5, 5);
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(100, 20, 20);
+}
+
+.danger-banner-text {
+    font-size: 11px;
+    -unity-font-style: bold;
+    color: rgb(255, 80, 60);
+    -unity-text-align: middle-center;
+    letter-spacing: 1.5px;
+}
+
+/* ── CHAT AREA ───────────────────────────────────────────── */
+
+.chat-area {
+    flex: 1;
+    background-color: rgb(6, 6, 16);
+    overflow: hidden;
+}
+
+/* ── TYPING INDICATOR ────────────────────────────────────── */
+
+.typing-indicator {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 12px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    height: 40px;
+    display: none;
+}
+
+.typing-name {
+    font-size: 15px;
+    color: rgb(165, 165, 190);
+    margin-right: 6px;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: rgb(74, 199, 170);
+    margin-right: 4px;
+}
+
+/* ── RESPONSE PANEL ──────────────────────────────────────── */
+
+.response-panel {
+    height: 276px;
+    flex-direction: column;
+    flex-shrink: 0;
+    background-color: rgb(8, 8, 24);
+    border-top-width: 1px;
+    border-top-color: rgb(33, 33, 71);
+}
+
+/* response-header removed */
+
+/* ── TONE SELECTOR ───────────────────────────────────────── */
+
+.tone-selector {
+    height: 44px;
+    flex-direction: row;
+    flex-shrink: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.tone-btn {
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3px;
+    margin-right: 3px;
+    background-color: rgb(15, 15, 38);
+    border-width: 0;
+    border-radius: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    overflow: hidden;
+    cursor: link;
+}
+
+.tone-btn-strip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+}
+
+.tone-btn:hover { background-color: rgb(22, 22, 50); }
+
+.tone-btn-title {
+    font-size: 15px;
+    -unity-font-style: bold;
+    color: rgb(115, 115, 145);
+    -unity-text-align: middle-left;
+    flex: 1;
+}
+
+
+/* ── Active tone states — applied in code ────────────────── */
+
+.tone-active-overconfident { background-color: rgb(10, 26, 58); }
+.tone-active-overconfident .tone-btn-title { color: rgb(100, 160, 255); }
+.tone-active-overconfident .tone-btn-key   { color: rgb(60, 110, 210); }
+
+.tone-active-neutral { background-color: rgb(22, 22, 40); }
+.tone-active-neutral .tone-btn-title { color: rgb(200, 200, 220); }
+.tone-active-neutral .tone-btn-key   { color: rgb(130, 130, 155); }
+
+.tone-active-hesitant { background-color: rgb(48, 26, 4); }
+.tone-active-hesitant .tone-btn-title { color: rgb(242, 160, 40); }
+.tone-active-hesitant .tone-btn-key   { color: rgb(185, 115, 25); }
+
+/* ── RESPONSE BUTTONS ────────────────────────────────────── */
+
+.response-buttons {
+    flex: 1;
+    flex-direction: column;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.response-btn {
+    flex: 1;
+    flex-direction: row;
+    align-items: stretch;
+    margin-bottom: 5px;
+    background-color: rgb(14, 14, 34);
+    border-width: 0;
+    border-radius: 3px;
+    padding: 0;
+    min-height: 48px;
+    cursor: link;
+}
+
+.response-btn:hover { background-color: rgb(22, 22, 50); }
+
+.response-btn-strip {
+    width: 8px;
+    flex-shrink: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.response-btn-badge {
+    font-size: 13px;
+    -unity-font-style: bold;
+    width: 72px;
+    flex-shrink: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    -unity-text-align: middle-center;
+}
+
+.response-btn-text {
+    flex: 1;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-left;
+    white-space: normal;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+}
+
+.response-btn-key {
+    font-size: 15px;
+    -unity-font-style: bold;
+    color: rgb(105, 105, 135);
+    width: 26px;
+    flex-shrink: 0;
+    -unity-text-align: middle-center;
+    padding-right: 6px;
+}
+
+/* ── CHAT BUBBLES ────────────────────────────────────────── */
+
+.chat-call-header {
+    font-size: 13px;
+    color: rgb(90, 90, 118);
+    -unity-text-align: middle-center;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.mom-bubble {
+    flex-direction: row;
+    align-items: stretch;
+    margin-bottom: 10px;
+    background-color: rgb(21, 24, 44);
+    min-height: 52px;
+    border-radius: 2px;
+}
+
+.mom-bubble-strip {
+    width: 4px;
+    background-color: rgb(74, 199, 170);
+    flex-shrink: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.mom-bubble-text {
+    flex: 1;
+    font-size: 17px;
+    color: rgb(222, 222, 232);
+    white-space: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 20px;
+}
+
+.player-bubble {
+    align-self: flex-end;
+    background-color: rgb(12, 54, 148);
+    min-height: 52px;
+    margin-bottom: 10px;
+    max-width: 90%;
+    border-radius: 2px;
+}
+
+.player-bubble-text {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    white-space: normal;
+    -unity-text-align: upper-right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 12px;
+}
+
+/* ── ENDING PANEL ────────────────────────────────────────── */
+
+.ending-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(5, 5, 15);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+/* Win endings: tinted green */
+.ending-panel-win  { background-color: rgb(3, 12, 8); }
+/* Lose endings: tinted dark red */
+.ending-panel-lose { background-color: rgb(14, 3, 3); }
+
+.ending-verdict {
+    font-size: 13px;
+    -unity-font-style: bold;
+    letter-spacing: 3px;
+    -unity-text-align: middle-center;
+    margin-bottom: 16px;
+}
+
+.ending-verdict-win  { color: rgb(61, 213, 112); }
+.ending-verdict-lose { color: rgb(220, 55, 40);  }
+
+.ending-title {
+    font-size: 30px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    white-space: normal;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.ending-title-win  { color: rgb(200, 255, 220); }
+.ending-title-lose { color: rgb(255, 180, 170); }
+
+.ending-body {
+    font-size: 19px;
+    color: rgb(204, 204, 217);
+    -unity-text-align: middle-center;
+    white-space: normal;
+    width: 90%;
+    margin-bottom: 40px;
+}
+
+.ending-body-win  { color: rgb(160, 220, 180); }
+.ending-body-lose { color: rgb(210, 170, 165); }
+
+.ending-hint {
+    font-size: 16px;
+    color: rgb(158, 158, 182);
+    -unity-text-align: middle-center;
+}
+
+/* ── DIFFICULTY PANEL ────────────────────────────────────── */
+
+.difficulty-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(5, 5, 15);
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: none;
+}
+
+.diff-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.diff-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background-color: rgb(29, 78, 55);
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+.diff-avatar-letter {
+    font-size: 26px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+}
+
+.diff-header-text {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.diff-name {
+    font-size: 28px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 4px;
+}
+
+.diff-status {
+    font-size: 13px;
+    color: rgb(61, 213, 112);
+}
+
+.diff-prompt {
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: rgb(135, 135, 165);
+    -unity-text-align: middle-center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.diff-buttons {
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.diff-btn {
+    flex-direction: row;
+    align-items: stretch;
+    background-color: rgb(14, 14, 34);
+    border-width: 0;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0;
+    min-height: 72px;
+    cursor: link;
+}
+
+.diff-btn:hover { background-color: rgb(22, 22, 50); }
+
+.diff-btn-strip {
+    width: 10px;
+    flex-shrink: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.diff-btn-name {
+    flex: 1;
+    font-size: 22px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-left;
+    padding-left: 18px;
+}
+
+.diff-hint {
+    font-size: 16px;
+    color: rgb(120, 120, 150);
+    -unity-text-align: middle-center;
+}

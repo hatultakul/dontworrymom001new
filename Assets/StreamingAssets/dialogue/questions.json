@@ -1,0 +1,1940 @@
+{
+  "questions": [
+    {
+      "id": "q_opener",
+      "promptText": "Hi sweetheart, is this a bad time?",
+      "followupText": "I haven't heard from you all week.",
+      "category": "HEALTH",
+      "tier": 1,
+      "isScripted": true,
+      "factTags": [],
+      "requiredFacts": [],
+      "responses": [
+        {
+          "text": "Never for you, Mom.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -5,
+          "suspicionDelta": 3,
+          "factsSet": [],
+          "momReplyId": "mr_opener_r0"
+        },
+        {
+          "text": "Kind of, actually. Can I call you back?",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 10,
+          "suspicionDelta": -5,
+          "factsSet": [],
+          "momReplyId": "mr_opener_r1"
+        },
+        {
+          "text": "No! I was literally just thinking about you.",
+          "type": "LIE",
+          "tone": "OVERSHARE",
+          "worryDelta": -8,
+          "suspicionDelta": 10,
+          "factsSet": [],
+          "momReplyId": "mr_opener_r2"
+        },
+        {
+          "text": "Oh you know. How are you?",
+          "type": "DEFLECT",
+          "tone": "VAGUE",
+          "worryDelta": 3,
+          "suspicionDelta": 5,
+          "factsSet": [],
+          "momReplyId": "mr_opener_r3",
+          "followupQuestion": "You're always so busy. Is everything actually okay?",
+          "followupResponses": [
+            {
+              "text": "Yes, I'm fine. Just a lot going on.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -5,
+              "suspicionDelta": 5,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "Honestly, it's been a weird few weeks.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": 8,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "Mom, you're the one who called me.",
+              "type": "DEFLECT",
+              "tone": "CONFIDENT",
+              "worryDelta": 2,
+              "suspicionDelta": 3,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "I don't know. A lot of things at once. It'll settle.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 10,
+              "suspicionDelta": -8,
+              "factsSet": [],
+              "momReplyId": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q_closer",
+      "promptText": "Okay, I'll let you go — just tell me one real thing.",
+      "followupText": "Just one. I won't panic, I promise.",
+      "category": "FUTURE",
+      "tier": 3,
+      "isScripted": true,
+      "factTags": [],
+      "requiredFacts": [],
+      "responses": [
+        {
+          "text": "I'm okay. I really am.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -15,
+          "suspicionDelta": 15,
+          "factsSet": [],
+          "momReplyId": "",
+          "followupQuestion": "Okay. I believe you. Call me this weekend?",
+          "followupResponses": [
+            {
+              "text": "Of course. Sunday?",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": -5,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": "mr_closer_fu_0"
+            },
+            {
+              "text": "Already in my calendar.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -8,
+              "suspicionDelta": 5,
+              "factsSet": [],
+              "momReplyId": "mr_closer_fu_1"
+            },
+            {
+              "text": "I'll try. Work's been unpredictable.",
+              "type": "DEFLECT",
+              "tone": "VAGUE",
+              "worryDelta": 5,
+              "suspicionDelta": 2,
+              "factsSet": [],
+              "momReplyId": "mr_closer_fu_2"
+            },
+            {
+              "text": "I need a few days first. I'll call when I'm ready.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 8,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": "mr_closer_fu_3"
+            }
+          ]
+        },
+        {
+          "text": "I miss you.",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 5,
+          "suspicionDelta": -15,
+          "factsSet": [],
+          "momReplyId": "mr_closer_r1"
+        },
+        {
+          "text": "I have a plan. Kind of. The plan has a plan.",
+          "type": "LIE",
+          "tone": "OVERSHARE",
+          "worryDelta": -5,
+          "suspicionDelta": 5,
+          "factsSet": [],
+          "momReplyId": "mr_closer_r2"
+        },
+        {
+          "text": "I love you, Mom.",
+          "type": "DEFLECT",
+          "tone": "CONFIDENT",
+          "worryDelta": -10,
+          "suspicionDelta": -5,
+          "factsSet": [],
+          "momReplyId": "mr_closer_r3"
+        }
+      ]
+    },
+    {
+      "id": "q_health_eat",
+      "promptText": "Did you eat something today? A real meal, not coffee?",
+      "followupText": "You always forget to eat when you're stressed.",
+      "category": "HEALTH",
+      "tier": 1,
+      "isScripted": false,
+      "factTags": [
+        "ate_today"
+      ],
+      "requiredFacts": [],
+      "responses": [
+        {
+          "text": "I had eggs. With toast. I'm fine, Mom.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -10,
+          "suspicionDelta": 3,
+          "factsSet": [
+            {
+              "key": "ate_today",
+              "value": true
+            }
+          ],
+          "momReplyId": "mr_eat_r0"
+        },
+        {
+          "text": "...I had like half a granola bar?",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 15,
+          "suspicionDelta": -5,
+          "factsSet": [
+            {
+              "key": "ate_today",
+              "value": false
+            }
+          ],
+          "momReplyId": "mr_eat_r1"
+        },
+        {
+          "text": "I'm literally eating right now. Chewing. Hear it?",
+          "type": "LIE",
+          "tone": "OVERSHARE",
+          "worryDelta": -8,
+          "suspicionDelta": 20,
+          "factsSet": [
+            {
+              "key": "ate_today",
+              "value": true
+            }
+          ],
+          "momReplyId": "mr_eat_r2"
+        },
+        {
+          "text": "Can we not start with this?",
+          "type": "DEFLECT",
+          "tone": "VAGUE",
+          "worryDelta": 5,
+          "suspicionDelta": 7,
+          "factsSet": [],
+          "momReplyId": "mr_eat_r3"
+        }
+      ]
+    },
+    {
+      "id": "q_health_sleep",
+      "promptText": "You sound tired. Are you sleeping?",
+      "followupText": "I know you. I can hear it in your voice.",
+      "category": "HEALTH",
+      "tier": 1,
+      "isScripted": false,
+      "factTags": [
+        "sleeping_ok"
+      ],
+      "requiredFacts": [],
+      "responses": [
+        {
+          "text": "Great, actually. Best sleep of my life.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -8,
+          "suspicionDelta": 3,
+          "factsSet": [
+            {
+              "key": "sleeping_ok",
+              "value": true
+            }
+          ],
+          "momReplyId": "mr_sleep_r0"
+        },
+        {
+          "text": "Not really. I was up until four.",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 12,
+          "suspicionDelta": -5,
+          "factsSet": [
+            {
+              "key": "sleeping_ok",
+              "value": false
+            }
+          ],
+          "momReplyId": "",
+          "followupQuestion": "Four in the morning. Doing what?",
+          "followupResponses": [
+            {
+              "text": "Working. There's a deadline I didn't mention.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -5,
+              "suspicionDelta": 8,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "I couldn't sleep. My head was just... loud.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": 12,
+              "suspicionDelta": -8,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "Scrolling, mostly. It's a bad habit. I know.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 8,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "I don't remember. Just awake.",
+              "type": "DEFLECT",
+              "tone": "VAGUE",
+              "worryDelta": 6,
+              "suspicionDelta": 3,
+              "factsSet": [],
+              "momReplyId": ""
+            }
+          ]
+        },
+        {
+          "text": "Sleep is complicated. But fine. You know. Fine.",
+          "type": "LIE",
+          "tone": "OVERSHARE",
+          "worryDelta": -3,
+          "suspicionDelta": 12,
+          "factsSet": [
+            {
+              "key": "sleeping_ok",
+              "value": true
+            }
+          ],
+          "momReplyId": "",
+          "followupQuestion": "Fine as in fine or fine as in you don't want to talk about it?",
+          "followupResponses": [
+            {
+              "text": "Both, kind of. I don't know how to explain it.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": 5,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": "mr_sleep2_fu_0"
+            },
+            {
+              "text": "Fine as in fine. Stop reading into it.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -10,
+              "suspicionDelta": 8,
+              "factsSet": [],
+              "momReplyId": "mr_sleep2_fu_1"
+            },
+            {
+              "text": "Can we not do this? It's fine.",
+              "type": "DEFLECT",
+              "tone": "VAGUE",
+              "worryDelta": 8,
+              "suspicionDelta": 5,
+              "factsSet": [],
+              "momReplyId": "mr_sleep2_fu_2"
+            },
+            {
+              "text": "The second one. I really don't want to talk about it.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 12,
+              "suspicionDelta": -8,
+              "factsSet": [],
+              "momReplyId": "mr_sleep2_fu_3"
+            }
+          ]
+        },
+        {
+          "text": "You sound tired too. Are YOU sleeping?",
+          "type": "DEFLECT",
+          "tone": "CONFIDENT",
+          "worryDelta": 2,
+          "suspicionDelta": 8,
+          "factsSet": [],
+          "momReplyId": "mr_sleep_r3"
+        }
+      ]
+    },
+    {
+      "id": "q_home_apt",
+      "promptText": "How's the apartment? Is it... okay?",
+      "followupText": "I just want to be able to picture where you live.",
+      "category": "HOME",
+      "tier": 1,
+      "isScripted": false,
+      "factTags": [
+        "apt_ok"
+      ],
+      "requiredFacts": [],
+      "responses": [
+        {
+          "text": "It's great. Cozy. Very mine.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -8,
+          "suspicionDelta": 3,
+          "factsSet": [
+            {
+              "key": "apt_ok",
+              "value": true
+            }
+          ],
+          "momReplyId": "",
+          "followupQuestion": "And when's the last time you cleaned it?",
+          "followupResponses": [
+            {
+              "text": "Last weekend, actually.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": -5,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": "mr_apt0_fu_0"
+            },
+            {
+              "text": "I just cleaned it. Like, this week.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -8,
+              "suspicionDelta": 6,
+              "factsSet": [],
+              "momReplyId": "mr_apt0_fu_1"
+            },
+            {
+              "text": "It's not that kind of mess.",
+              "type": "DEFLECT",
+              "tone": "VAGUE",
+              "worryDelta": 5,
+              "suspicionDelta": 5,
+              "factsSet": [],
+              "momReplyId": "mr_apt0_fu_2"
+            },
+            {
+              "text": "I don't remember. It's been a while.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 10,
+              "suspicionDelta": -3,
+              "factsSet": [],
+              "momReplyId": "mr_apt0_fu_3"
+            }
+          ]
+        },
+        {
+          "text": "The bathroom situation is... evolving.",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 12,
+          "suspicionDelta": -5,
+          "factsSet": [
+            {
+              "key": "apt_ok",
+              "value": false
+            }
+          ],
+          "momReplyId": "",
+          "followupQuestion": "What does evolving mean? Evolving like how?",
+          "followupResponses": [
+            {
+              "text": "The tile situation is being... negotiated.",
+              "type": "DEFLECT",
+              "tone": "VAGUE",
+              "worryDelta": 5,
+              "suspicionDelta": 3,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "There's a leak. It's small. The landlord knows.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": 12,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "I meant it's getting better. Actively evolving toward good.",
+              "type": "LIE",
+              "tone": "OVERSHARE",
+              "worryDelta": -5,
+              "suspicionDelta": 10,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "I'm dealing with the landlord. It's in progress.",
+              "type": "DEFLECT",
+              "tone": "CONFIDENT",
+              "worryDelta": 3,
+              "suspicionDelta": 6,
+              "factsSet": [],
+              "momReplyId": ""
+            }
+          ]
+        },
+        {
+          "text": "I literally just deep-cleaned it. Ask anyone.",
+          "type": "LIE",
+          "tone": "OVERSHARE",
+          "worryDelta": -10,
+          "suspicionDelta": 15,
+          "factsSet": [
+            {
+              "key": "apt_ok",
+              "value": true
+            }
+          ],
+          "momReplyId": "",
+          "followupQuestion": "Who is anyone.",
+          "followupResponses": [
+            {
+              "text": "My roommate. She was literally there.",
+              "type": "LIE",
+              "worryDelta": 3,
+              "suspicionDelta": 10,
+              "momReplyId": "mr_apt_r2_fu_0"
+            },
+            {
+              "text": "Okay, fine. It's a little chaotic right now.",
+              "type": "TRUTH",
+              "worryDelta": 10,
+              "suspicionDelta": -8,
+              "momReplyId": "mr_apt_r2_fu_1"
+            },
+            {
+              "text": "My neighbor. She has a key.",
+              "type": "LIE",
+              "worryDelta": 3,
+              "suspicionDelta": 12,
+              "momReplyId": "mr_apt_r2_fu_2"
+            },
+            {
+              "text": "People who've been over. People.",
+              "type": "DEFLECT",
+              "worryDelta": 6,
+              "suspicionDelta": 5,
+              "momReplyId": "mr_apt_r2_fu_3"
+            }
+          ]
+        },
+        {
+          "text": "Why? What did you hear?",
+          "type": "DEFLECT",
+          "tone": "VAGUE",
+          "worryDelta": 5,
+          "suspicionDelta": 10,
+          "factsSet": [],
+          "momReplyId": "",
+          "followupQuestion": "I heard something. From your cousin.",
+          "followupResponses": [
+            {
+              "text": "She's exaggerating. You know how she is.",
+              "type": "LIE",
+              "worryDelta": 3,
+              "suspicionDelta": 12,
+              "momReplyId": "mr_apt_r3_fu_0"
+            },
+            {
+              "text": "What did she say exactly?",
+              "type": "TRUTH",
+              "worryDelta": 12,
+              "suspicionDelta": -10,
+              "momReplyId": "mr_apt_r3_fu_1"
+            },
+            {
+              "text": "That was weeks ago. It's fine now.",
+              "type": "LIE",
+              "worryDelta": 3,
+              "suspicionDelta": 10,
+              "momReplyId": "mr_apt_r3_fu_2"
+            },
+            {
+              "text": "Cousins talk. It's nothing.",
+              "type": "DEFLECT",
+              "worryDelta": 8,
+              "suspicionDelta": 5,
+              "momReplyId": "mr_apt_r3_fu_3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q_friends",
+      "promptText": "Have you seen any of your friends lately?",
+      "followupText": "You seemed a little lonely last time we talked.",
+      "category": "FRIENDS",
+      "tier": 1,
+      "isScripted": false,
+      "factTags": [
+        "has_friends"
+      ],
+      "requiredFacts": [],
+      "responses": [
+        {
+          "text": "Yeah, we got together last week. It was really nice.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -10,
+          "suspicionDelta": 3,
+          "factsSet": [
+            {
+              "key": "has_friends",
+              "value": true
+            }
+          ],
+          "momReplyId": "mr_friends_r0"
+        },
+        {
+          "text": "I've been kind of... in my head lately.",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 8,
+          "suspicionDelta": -5,
+          "factsSet": [
+            {
+              "key": "has_friends",
+              "value": false
+            }
+          ],
+          "momReplyId": "",
+          "followupQuestion": "In your head how? Are you okay?",
+          "followupResponses": [
+            {
+              "text": "Yes. Processing some things. I'm fine.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -5,
+              "suspicionDelta": 5,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "Honestly? Kind of lonely. But it passes.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 15,
+              "suspicionDelta": -12,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "Just work stuff. Nothing you need to worry about.",
+              "type": "DEFLECT",
+              "tone": "VAGUE",
+              "worryDelta": 5,
+              "suspicionDelta": 3,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "It's anxiety. It comes and goes. I manage it.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": 12,
+              "suspicionDelta": -8,
+              "factsSet": [],
+              "momReplyId": ""
+            }
+          ]
+        },
+        {
+          "text": "Tons. Literally so many friend activities. I'm exhausted from all the socializing.",
+          "type": "LIE",
+          "tone": "OVERSHARE",
+          "worryDelta": -12,
+          "suspicionDelta": 15,
+          "factsSet": [
+            {
+              "key": "has_friends",
+              "value": true
+            }
+          ],
+          "momReplyId": "",
+          "followupQuestion": "Are you okay? Really?",
+          "followupResponses": [
+            {
+              "text": "Honestly? A little stretched. But I'm managing.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": 6,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": "mr_friends2_fu_0"
+            },
+            {
+              "text": "I'm great. I love being busy.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -8,
+              "suspicionDelta": 6,
+              "factsSet": [],
+              "momReplyId": "mr_friends2_fu_1"
+            },
+            {
+              "text": "Can we change the subject?",
+              "type": "DEFLECT",
+              "tone": "VAGUE",
+              "worryDelta": 8,
+              "suspicionDelta": 5,
+              "factsSet": [],
+              "momReplyId": "mr_friends2_fu_2"
+            },
+            {
+              "text": "Not really. I think I overcommitted myself.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 12,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": "mr_friends2_fu_3"
+            }
+          ]
+        },
+        {
+          "text": "People are busy. It's fine.",
+          "type": "DEFLECT",
+          "tone": "VAGUE",
+          "worryDelta": 5,
+          "suspicionDelta": 3,
+          "factsSet": [],
+          "momReplyId": "mr_friends_r3"
+        }
+      ]
+    },
+    {
+      "id": "q_work_job",
+      "promptText": "How's work? Are they treating you well?",
+      "followupText": "I just want to know someone's looking out for you.",
+      "category": "WORK",
+      "tier": 2,
+      "isScripted": false,
+      "factTags": [
+        "has_job",
+        "job_good"
+      ],
+      "requiredFacts": [],
+      "responses": [
+        {
+          "text": "It's great. I'm really hitting my stride.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -10,
+          "suspicionDelta": 3,
+          "factsSet": [
+            {
+              "key": "has_job",
+              "value": true
+            },
+            {
+              "key": "job_good",
+              "value": true
+            }
+          ],
+          "momReplyId": "",
+          "followupQuestion": "Your stride. What does that look like, exactly?",
+          "followupResponses": [
+            {
+              "text": "More clients, better projects. It's clicking.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -5,
+              "suspicionDelta": 8,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "Keeping busy. Staying relevant. You know.",
+              "type": "DEFLECT",
+              "tone": "VAGUE",
+              "worryDelta": 3,
+              "suspicionDelta": 5,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "Honestly I just mean I'm not panicking every day.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 10,
+              "suspicionDelta": -8,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "I mean things are moving. It's hard to explain.",
+              "type": "LIE",
+              "tone": "VAGUE",
+              "worryDelta": 2,
+              "suspicionDelta": 6,
+              "factsSet": [],
+              "momReplyId": ""
+            }
+          ]
+        },
+        {
+          "text": "I've been freelancing a bit. Exploring options.",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 10,
+          "suspicionDelta": -5,
+          "factsSet": [
+            {
+              "key": "has_job",
+              "value": false
+            }
+          ],
+          "momReplyId": "mr_work_r1",
+          "followupQuestion": "Exploring options means what, exactly? Do you have income coming in?",
+          "followupResponses": [
+            {
+              "text": "I have a few clients. It's picking up.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -8,
+              "suspicionDelta": 8,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "Some months are better than others.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": 10,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "Mom, I'm figuring it out. That's the whole point.",
+              "type": "DEFLECT",
+              "tone": "CONFIDENT",
+              "worryDelta": 5,
+              "suspicionDelta": 5,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "Some months are better than others. This one's been hard.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 12,
+              "suspicionDelta": -8,
+              "factsSet": [],
+              "momReplyId": ""
+            }
+          ]
+        },
+        {
+          "text": "They actually gave me more responsibility. Unofficially. It's a thing.",
+          "type": "LIE",
+          "tone": "OVERSHARE",
+          "worryDelta": -12,
+          "suspicionDelta": 18,
+          "factsSet": [
+            {
+              "key": "has_job",
+              "value": true
+            },
+            {
+              "key": "job_good",
+              "value": true
+            }
+          ],
+          "momReplyId": "mr_work_r2"
+        },
+        {
+          "text": "Work is work. You know how it is.",
+          "type": "DEFLECT",
+          "tone": "VAGUE",
+          "worryDelta": 2,
+          "suspicionDelta": 5,
+          "factsSet": [],
+          "momReplyId": "mr_work_r3"
+        }
+      ]
+    },
+    {
+      "id": "q_money_bills",
+      "promptText": "Are you keeping up with bills? Just be honest.",
+      "followupText": "I found a check I wrote you last year. It was never cashed.",
+      "category": "MONEY",
+      "tier": 2,
+      "isScripted": false,
+      "factTags": [
+        "bills_ok"
+      ],
+      "requiredFacts": [],
+      "responses": [
+        {
+          "text": "Completely on top of it. Autopay, even.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -8,
+          "suspicionDelta": 5,
+          "factsSet": [
+            {
+              "key": "bills_ok",
+              "value": true
+            }
+          ],
+          "momReplyId": "mr_bills_r0"
+        },
+        {
+          "text": "I'm a little behind on one thing. It's manageable.",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 15,
+          "suspicionDelta": -8,
+          "factsSet": [
+            {
+              "key": "bills_ok",
+              "value": false
+            }
+          ],
+          "momReplyId": "",
+          "followupQuestion": "What does manageable mean? Which bill?",
+          "followupResponses": [
+            {
+              "text": "Electric. One month. I have it covered next week.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": 10,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "It's handled. I don't want to get into it.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -5,
+              "suspicionDelta": 10,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "It's more like... a few things, actually. Smaller things.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 18,
+              "suspicionDelta": -10,
+              "factsSet": [],
+              "momReplyId": ""
+            },
+            {
+              "text": "I'm figuring it out. I always do.",
+              "type": "DEFLECT",
+              "tone": "CONFIDENT",
+              "worryDelta": 5,
+              "suspicionDelta": 4,
+              "factsSet": [],
+              "momReplyId": ""
+            }
+          ]
+        },
+        {
+          "text": "Absolutely. I also set up a budget spreadsheet. It has color coding.",
+          "type": "LIE",
+          "tone": "OVERSHARE",
+          "worryDelta": -10,
+          "suspicionDelta": 15,
+          "factsSet": [
+            {
+              "key": "bills_ok",
+              "value": true
+            }
+          ],
+          "momReplyId": "mr_bills_r2"
+        },
+        {
+          "text": "The economy is insane right now. Even for people who are doing fine.",
+          "type": "DEFLECT",
+          "tone": "VAGUE",
+          "worryDelta": 5,
+          "suspicionDelta": 7,
+          "factsSet": [],
+          "momReplyId": "",
+          "followupQuestion": "The economy is insane. And yet rent is still due.",
+          "followupResponses": [
+            {
+              "text": "I know. I'm on top of it. Barely.",
+              "type": "LIE",
+              "worryDelta": 3,
+              "suspicionDelta": 10,
+              "momReplyId": "mr_bills_r3_fu_0"
+            },
+            {
+              "text": "I'm a little behind. I'm working on it.",
+              "type": "TRUTH",
+              "worryDelta": 10,
+              "suspicionDelta": -8,
+              "momReplyId": "mr_bills_r3_fu_1"
+            },
+            {
+              "text": "I set up autopay last week. It's fine.",
+              "type": "LIE",
+              "worryDelta": 3,
+              "suspicionDelta": 12,
+              "momReplyId": "mr_bills_r3_fu_2"
+            },
+            {
+              "text": "I know, Mom. I'm aware.",
+              "type": "DEFLECT",
+              "worryDelta": 8,
+              "suspicionDelta": 5,
+              "momReplyId": "mr_bills_r3_fu_3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q_love_dating",
+      "promptText": "Are you seeing anyone? You haven't mentioned anyone in a while.",
+      "followupText": "It's okay if there's nobody. I just want to know.",
+      "category": "LOVE",
+      "tier": 2,
+      "isScripted": false,
+      "factTags": [
+        "dating",
+        "has_partner"
+      ],
+      "requiredFacts": [],
+      "forbiddenFacts": [
+        { "key": "has_guest", "value": true }
+      ],
+      "responses": [
+        {
+          "text": "I'm focusing on myself right now. Very intentionally.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -5,
+          "suspicionDelta": 3,
+          "factsSet": [
+            {
+              "key": "dating",
+              "value": false
+            },
+            {
+              "key": "has_partner",
+              "value": false
+            }
+          ],
+          "momReplyId": "mr_dating_r0"
+        },
+        {
+          "text": "Actually, yeah. It's new. I didn't want to jinx it.",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": -5,
+          "suspicionDelta": -5,
+          "factsSet": [
+            {
+              "key": "dating",
+              "value": true
+            },
+            {
+              "key": "has_partner",
+              "value": true
+            }
+          ],
+          "momReplyId": "",
+          "followupQuestion": "What's their name? What do they do?",
+          "followupResponses": [
+            {
+              "text": "Alex. They work in design.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": -5,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": "mr_dating1_fu_0"
+            },
+            {
+              "text": "Jamie. Something in tech. I'm not sure exactly.",
+              "type": "LIE",
+              "tone": "VAGUE",
+              "worryDelta": -3,
+              "suspicionDelta": 8,
+              "factsSet": [],
+              "momReplyId": "mr_dating1_fu_1"
+            },
+            {
+              "text": "I'm not doing this. It's too new.",
+              "type": "DEFLECT",
+              "tone": "VAGUE",
+              "worryDelta": 5,
+              "suspicionDelta": 2,
+              "factsSet": [],
+              "momReplyId": "mr_dating1_fu_2"
+            },
+            {
+              "text": "We haven't talked about what we are yet.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 8,
+              "suspicionDelta": -3,
+              "factsSet": [],
+              "momReplyId": "mr_dating1_fu_3"
+            }
+          ]
+        },
+        {
+          "text": "No. Definitely not. One hundred percent single. Why?",
+          "type": "LIE",
+          "tone": "OVERSHARE",
+          "worryDelta": -8,
+          "suspicionDelta": 18,
+          "factsSet": [
+            {
+              "key": "dating",
+              "value": false
+            },
+            {
+              "key": "has_partner",
+              "value": false
+            }
+          ],
+          "momReplyId": "mr_dating_r2"
+        },
+        {
+          "text": "Mom, can we not do this right now?",
+          "type": "DEFLECT",
+          "tone": "CONFIDENT",
+          "worryDelta": 5,
+          "suspicionDelta": 8,
+          "factsSet": [],
+          "momReplyId": "mr_dating_r3"
+        }
+      ]
+    },
+    {
+      "id": "q_home_noise",
+      "promptText": "I thought I heard another voice in the background. Is someone there?",
+      "followupText": "I'm not upset. I just want to know.",
+      "category": "HOME",
+      "tier": 2,
+      "isScripted": false,
+      "factTags": [
+        "lives_alone",
+        "has_roommate"
+      ],
+      "requiredFacts": [],
+      "responses": [
+        {
+          "text": "That's the TV. I leave it on for company. Very normal.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -5,
+          "suspicionDelta": 10,
+          "factsSet": [
+            {
+              "key": "lives_alone",
+              "value": true
+            }
+          ],
+          "momReplyId": "mr_noise_r0"
+        },
+        {
+          "text": "That's my roommate. We split the place.",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 5,
+          "suspicionDelta": -5,
+          "factsSet": [
+            {
+              "key": "lives_alone",
+              "value": false
+            },
+            {
+              "key": "has_roommate",
+              "value": true
+            }
+          ],
+          "momReplyId": "",
+          "followupQuestion": "And you didn't tell me? Is it a nice person?",
+          "followupResponses": [
+            {
+              "text": "Yeah, I should have. They're great, actually.",
+              "type": "TRUTH",
+              "tone": "CONFIDENT",
+              "worryDelta": -5,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": "mr_noise1_fu_0"
+            },
+            {
+              "text": "I didn't think it was a big deal.",
+              "type": "LIE",
+              "tone": "VAGUE",
+              "worryDelta": -3,
+              "suspicionDelta": 6,
+              "factsSet": [],
+              "momReplyId": "mr_noise1_fu_1"
+            },
+            {
+              "text": "It happened fast. I'll explain more later.",
+              "type": "DEFLECT",
+              "tone": "VAGUE",
+              "worryDelta": 5,
+              "suspicionDelta": 4,
+              "factsSet": [],
+              "momReplyId": "mr_noise1_fu_2"
+            },
+            {
+              "text": "I didn't want to hear your opinion on it.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 10,
+              "suspicionDelta": -3,
+              "factsSet": [],
+              "momReplyId": "mr_noise1_fu_3"
+            }
+          ]
+        },
+        {
+          "text": "It was a podcast! A podcast where someone talks! Very normal podcast!",
+          "type": "LIE",
+          "tone": "OVERSHARE",
+          "worryDelta": -8,
+          "suspicionDelta": 18,
+          "factsSet": [
+            {
+              "key": "lives_alone",
+              "value": true
+            }
+          ],
+          "momReplyId": "mr_noise_r2"
+        },
+        {
+          "text": "The walls are thin. Neighbors.",
+          "type": "LIE",
+          "tone": "VAGUE",
+          "worryDelta": -3,
+          "suspicionDelta": 8,
+          "factsSet": [],
+          "momReplyId": "",
+          "followupQuestion": "It sounded like it was inside the room.",
+          "followupResponses": [
+            {
+              "text": "The acoustics are weird. Old building.",
+              "type": "LIE",
+              "worryDelta": 3,
+              "suspicionDelta": 10,
+              "momReplyId": "mr_noise_r3_fu_0"
+            },
+            {
+              "text": "Okay — I had someone over.",
+              "type": "TRUTH",
+              "worryDelta": 10,
+              "suspicionDelta": -10,
+              "factsSet": [
+                { "key": "has_guest", "value": true }
+              ],
+              "momReplyId": "mr_noise_r3_fu_1"
+            },
+            {
+              "text": "My laptop mic. It picks up everything.",
+              "type": "LIE",
+              "worryDelta": 3,
+              "suspicionDelta": 12,
+              "momReplyId": "mr_noise_r3_fu_2"
+            },
+            {
+              "text": "Mom, you're analyzing my audio now?",
+              "type": "DEFLECT",
+              "worryDelta": 6,
+              "suspicionDelta": 5,
+              "momReplyId": "mr_noise_r3_fu_3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q_money_cousin",
+      "promptText": "Your cousin said you've been Venmoing her for coffee. Multiple times.",
+      "followupText": "She wasn't gossiping. She was worried.",
+      "category": "MONEY",
+      "tier": 2,
+      "isScripted": false,
+      "factTags": [
+        "bills_ok"
+      ],
+      "requiredFacts": [],
+      "responses": [
+        {
+          "text": "We have a reciprocal coffee situation. It's a whole thing.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -5,
+          "suspicionDelta": 12,
+          "factsSet": [],
+          "momReplyId": "mr_cousin_r0"
+        },
+        {
+          "text": "I've been a little tight this month. It's not a big deal.",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 12,
+          "suspicionDelta": -8,
+          "factsSet": [
+            {
+              "key": "bills_ok",
+              "value": false
+            }
+          ],
+          "momReplyId": "",
+          "followupQuestion": "A little tight. Since when?",
+          "followupResponses": [
+            {
+              "text": "A couple of months. But it's stabilizing.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": 8,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": "mr_cousin1_fu_0"
+            },
+            {
+              "text": "Just this month. I have something coming in soon.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -5,
+              "suspicionDelta": 8,
+              "factsSet": [],
+              "momReplyId": "mr_cousin1_fu_1"
+            },
+            {
+              "text": "It's just how it is right now.",
+              "type": "DEFLECT",
+              "tone": "VAGUE",
+              "worryDelta": 6,
+              "suspicionDelta": 4,
+              "factsSet": [],
+              "momReplyId": "mr_cousin1_fu_2"
+            },
+            {
+              "text": "Since things changed. I'll explain when I can.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 15,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": "mr_cousin1_fu_3"
+            }
+          ]
+        },
+        {
+          "text": "I Venmo people all the time. That's just friendship now.",
+          "type": "DEFLECT",
+          "tone": "VAGUE",
+          "worryDelta": 3,
+          "suspicionDelta": 5,
+          "factsSet": [],
+          "momReplyId": "",
+          "followupQuestion": "She told me because she was worried. That makes two of us.",
+          "followupResponses": [
+            {
+              "text": "She worries about everything. It's nothing.",
+              "type": "LIE",
+              "worryDelta": 3,
+              "suspicionDelta": 10,
+              "momReplyId": "mr_cousin_r2_fu_0"
+            },
+            {
+              "text": "Okay, I've been helping her out. Mutually.",
+              "type": "TRUTH",
+              "worryDelta": 10,
+              "suspicionDelta": -10,
+              "momReplyId": "mr_cousin_r2_fu_1"
+            },
+            {
+              "text": "She completely misread the situation.",
+              "type": "LIE",
+              "worryDelta": 3,
+              "suspicionDelta": 12,
+              "momReplyId": "mr_cousin_r2_fu_2"
+            },
+            {
+              "text": "You don't have to worry. Either of you.",
+              "type": "DEFLECT",
+              "worryDelta": 8,
+              "suspicionDelta": 5,
+              "momReplyId": "mr_cousin_r2_fu_3"
+            }
+          ]
+        },
+        {
+          "text": "She told you that? What else did she tell you?",
+          "type": "DEFLECT",
+          "tone": "CONFIDENT",
+          "worryDelta": 8,
+          "suspicionDelta": 5,
+          "factsSet": [],
+          "momReplyId": "mr_cousin_r3"
+        }
+      ]
+    },
+    {
+      "id": "q_future_plan",
+      "promptText": "I just need to know you have some kind of plan. Any plan.",
+      "followupText": "Not a big plan. Even a small one.",
+      "category": "FUTURE",
+      "tier": 2,
+      "isScripted": false,
+      "factTags": [],
+      "requiredFacts": [],
+      "responses": [
+        {
+          "text": "I have a five-year plan. It's very detailed.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -10,
+          "suspicionDelta": 10,
+          "factsSet": [],
+          "momReplyId": "",
+          "followupQuestion": "A five-year plan. Can I hear it?",
+          "followupResponses": [
+            {
+              "text": "It's still in progress. I'll send you the overview.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -6,
+              "suspicionDelta": 8,
+              "factsSet": [],
+              "momReplyId": "mr_plan0_fu_0"
+            },
+            {
+              "text": "It's more like a direction than a plan, honestly.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": 5,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": "mr_plan0_fu_1"
+            },
+            {
+              "text": "It's complicated. There are a lot of variables.",
+              "type": "DEFLECT",
+              "tone": "VAGUE",
+              "worryDelta": 5,
+              "suspicionDelta": 5,
+              "factsSet": [],
+              "momReplyId": "mr_plan0_fu_2"
+            },
+            {
+              "text": "I don't actually have one. I said it and it sounded good.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 10,
+              "suspicionDelta": -8,
+              "factsSet": [],
+              "momReplyId": "mr_plan0_fu_3"
+            }
+          ]
+        },
+        {
+          "text": "I have... the beginning of a plan.",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 10,
+          "suspicionDelta": -5,
+          "factsSet": [],
+          "momReplyId": "mr_plan_r1"
+        },
+        {
+          "text": "I have seventeen plans. The problem is just choosing.",
+          "type": "LIE",
+          "tone": "OVERSHARE",
+          "worryDelta": -8,
+          "suspicionDelta": 15,
+          "factsSet": [],
+          "momReplyId": "",
+          "followupQuestion": "Seventeen. And which one is winning?",
+          "followupResponses": [
+            {
+              "text": "The practical one. I think.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -5,
+              "suspicionDelta": 6,
+              "factsSet": [],
+              "momReplyId": "mr_plan2_fu_0"
+            },
+            {
+              "text": "None of them yet. That's kind of the problem.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": 8,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": "mr_plan2_fu_1"
+            },
+            {
+              "text": "It depends on the day. Today? I don't know.",
+              "type": "DEFLECT",
+              "tone": "OVERSHARE",
+              "worryDelta": 10,
+              "suspicionDelta": 3,
+              "factsSet": [],
+              "momReplyId": "mr_plan2_fu_2"
+            },
+            {
+              "text": "The one where I figure it out as I go.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": 5,
+              "suspicionDelta": -3,
+              "factsSet": [],
+              "momReplyId": "mr_plan2_fu_3"
+            }
+          ]
+        },
+        {
+          "text": "Plans are for people who know what they want. I'm still becoming.",
+          "type": "DEFLECT",
+          "tone": "VAGUE",
+          "worryDelta": 8,
+          "suspicionDelta": 5,
+          "factsSet": [],
+          "momReplyId": "mr_plan_r3"
+        }
+      ]
+    },
+    {
+      "id": "q_work_mall",
+      "promptText": "Your cousin said she saw you at the mall. On Tuesday. At 2pm.",
+      "followupText": "Tuesday. Two in the afternoon.",
+      "category": "WORK",
+      "tier": 3,
+      "isScripted": false,
+      "factTags": [
+        "has_job"
+      ],
+      "requiredFacts": [
+        {
+          "key": "has_job",
+          "value": true
+        }
+      ],
+      "responses": [
+        {
+          "text": "Client meeting. We walked and talked.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -5,
+          "suspicionDelta": 20,
+          "factsSet": [],
+          "momReplyId": "mr_mall_r0"
+        },
+        {
+          "text": "Okay. I got let go last month.",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 25,
+          "suspicionDelta": -20,
+          "factsSet": [
+            {
+              "key": "has_job",
+              "value": false
+            }
+          ],
+          "momReplyId": "",
+          "followupQuestion": "Oh, sweetheart. How long ago? Why didn't you call me?",
+          "followupResponses": [
+            {
+              "text": "I needed time to process it first.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": 5,
+              "suspicionDelta": -8,
+              "factsSet": [],
+              "momReplyId": "mr_mall1_fu_0"
+            },
+            {
+              "text": "I was handling it. I didn't want to worry you.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -5,
+              "suspicionDelta": 6,
+              "factsSet": [],
+              "momReplyId": "mr_mall1_fu_1"
+            },
+            {
+              "text": "I don't know. I just didn't.",
+              "type": "DEFLECT",
+              "tone": "VAGUE",
+              "worryDelta": 8,
+              "suspicionDelta": 3,
+              "factsSet": [],
+              "momReplyId": "mr_mall1_fu_2"
+            },
+            {
+              "text": "Because I knew you'd panic. And I wasn't ready for that.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 12,
+              "suspicionDelta": -6,
+              "factsSet": [],
+              "momReplyId": "mr_mall1_fu_3"
+            }
+          ]
+        },
+        {
+          "text": "Tell Rachel to mind her business.",
+          "type": "DEFLECT",
+          "tone": "CONFIDENT",
+          "worryDelta": 10,
+          "suspicionDelta": 5,
+          "factsSet": [],
+          "momReplyId": "mr_mall_r2"
+        },
+        {
+          "text": "I told you — they changed my hours. I work nights now.",
+          "type": "LIE",
+          "tone": "OVERSHARE",
+          "worryDelta": -3,
+          "suspicionDelta": 22,
+          "factsSet": [],
+          "momReplyId": "mr_mall_r3"
+        }
+      ]
+    },
+    {
+      "id": "q_love_ex",
+      "promptText": "Are you and Marcus still... you said you broke up.",
+      "followupText": "I'm only asking because I liked him. Or I did.",
+      "category": "LOVE",
+      "tier": 3,
+      "isScripted": false,
+      "factTags": [
+        "has_partner",
+        "lives_alone"
+      ],
+      "requiredFacts": [
+        {
+          "key": "has_partner",
+          "value": true
+        }
+      ],
+      "responses": [
+        {
+          "text": "It's complicated. We're working on it.",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 15,
+          "suspicionDelta": -10,
+          "factsSet": [
+            {
+              "key": "has_partner",
+              "value": true
+            }
+          ],
+          "momReplyId": "mr_ex_r0"
+        },
+        {
+          "text": "No. We're completely done. That was final.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -8,
+          "suspicionDelta": 15,
+          "factsSet": [
+            {
+              "key": "has_partner",
+              "value": false
+            }
+          ],
+          "momReplyId": "mr_ex_r1"
+        },
+        {
+          "text": "He needed to borrow the couch temporarily. It's very platonic.",
+          "type": "TRUTH",
+          "tone": "OVERSHARE",
+          "worryDelta": 12,
+          "suspicionDelta": -5,
+          "factsSet": [
+            {
+              "key": "has_partner",
+              "value": true
+            },
+            {
+              "key": "lives_alone",
+              "value": false
+            }
+          ],
+          "momReplyId": "mr_ex_r2"
+        },
+        {
+          "text": "Mom, I'm handling it.",
+          "type": "DEFLECT",
+          "tone": "VAGUE",
+          "worryDelta": 5,
+          "suspicionDelta": 5,
+          "factsSet": [],
+          "momReplyId": "mr_ex_r3"
+        }
+      ]
+    },
+    {
+      "id": "q_money_rent",
+      "promptText": "How's rent this month. Actually. Don't say fine.",
+      "followupText": "I can send you something if you need it.",
+      "category": "MONEY",
+      "tier": 3,
+      "isScripted": false,
+      "factTags": [
+        "bills_ok"
+      ],
+      "requiredFacts": [],
+      "responses": [
+        {
+          "text": "Covered. Already paid. Stop worrying.",
+          "type": "LIE",
+          "tone": "CONFIDENT",
+          "worryDelta": -10,
+          "suspicionDelta": 15,
+          "factsSet": [
+            {
+              "key": "bills_ok",
+              "value": true
+            }
+          ],
+          "momReplyId": "mr_rent_r0"
+        },
+        {
+          "text": "I'm two weeks late but I talked to the landlord.",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 20,
+          "suspicionDelta": -15,
+          "factsSet": [
+            {
+              "key": "bills_ok",
+              "value": false
+            }
+          ],
+          "momReplyId": "mr_rent_r1"
+        },
+        {
+          "text": "I sold something. Don't ask what. Rent is handled.",
+          "type": "TRUTH",
+          "tone": "OVERSHARE",
+          "worryDelta": 10,
+          "suspicionDelta": -5,
+          "factsSet": [
+            {
+              "key": "bills_ok",
+              "value": true
+            }
+          ],
+          "momReplyId": "mr_rent_r2"
+        },
+        {
+          "text": "It's handled. Let's not do this.",
+          "type": "DEFLECT",
+          "tone": "CONFIDENT",
+          "worryDelta": 5,
+          "suspicionDelta": 8,
+          "factsSet": [],
+          "momReplyId": "",
+          "followupQuestion": "It's not handled if you won't tell me how.",
+          "followupResponses": [
+            {
+              "text": "I got a little help. It's sorted.",
+              "type": "LIE",
+              "worryDelta": 3,
+              "suspicionDelta": 12,
+              "momReplyId": "mr_rent_r3_fu_0"
+            },
+            {
+              "text": "I borrowed from a friend. I'll pay it back.",
+              "type": "TRUTH",
+              "worryDelta": 12,
+              "suspicionDelta": -8,
+              "momReplyId": "mr_rent_r3_fu_1"
+            },
+            {
+              "text": "I sold some stuff. It covered it.",
+              "type": "LIE",
+              "worryDelta": 3,
+              "suspicionDelta": 10,
+              "momReplyId": "mr_rent_r3_fu_2"
+            },
+            {
+              "text": "It's handled means it's handled, Mom.",
+              "type": "DEFLECT",
+              "worryDelta": 8,
+              "suspicionDelta": 5,
+              "momReplyId": "mr_rent_r3_fu_3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q_future_school",
+      "promptText": "Do you ever think about going back to school? To finish?",
+      "followupText": "You were so close.",
+      "category": "FUTURE",
+      "tier": 3,
+      "isScripted": false,
+      "factTags": [],
+      "requiredFacts": [],
+      "responses": [
+        {
+          "text": "I've actually been looking into it.",
+          "type": "LIE",
+          "tone": "VAGUE",
+          "worryDelta": -8,
+          "suspicionDelta": 5,
+          "factsSet": [],
+          "momReplyId": "mr_school_r0"
+        },
+        {
+          "text": "No. That's not the path anymore. I've made peace with it.",
+          "type": "TRUTH",
+          "tone": "CONFIDENT",
+          "worryDelta": 12,
+          "suspicionDelta": -10,
+          "factsSet": [],
+          "momReplyId": "mr_school_r1"
+        },
+        {
+          "text": "I'm building something actually. It's hard to explain. It's kind of like a business.",
+          "type": "TRUTH",
+          "tone": "OVERSHARE",
+          "worryDelta": 15,
+          "suspicionDelta": -8,
+          "factsSet": [],
+          "momReplyId": "mr_school_r2"
+        },
+        {
+          "text": "Mom, can we talk about something else?",
+          "type": "DEFLECT",
+          "tone": "VAGUE",
+          "worryDelta": 5,
+          "suspicionDelta": 5,
+          "factsSet": [],
+          "momReplyId": "mr_school_r3"
+        }
+      ]
+    },
+    {
+      "id": "q_health_doctor",
+      "promptText": "When's the last time you went to the doctor? An actual doctor.",
+      "followupText": "You can't just google everything.",
+      "category": "HEALTH",
+      "tier": 3,
+      "isScripted": false,
+      "factTags": [],
+      "requiredFacts": [],
+      "responses": [
+        {
+          "text": "I had a checkup like... recently. It was good.",
+          "type": "LIE",
+          "tone": "VAGUE",
+          "worryDelta": -8,
+          "suspicionDelta": 5,
+          "factsSet": [],
+          "momReplyId": "",
+          "followupQuestion": "Recently like last month, or the other kind of recently?",
+          "followupResponses": [
+            {
+              "text": "Like, this year. Definitely this year.",
+              "type": "LIE",
+              "tone": "CONFIDENT",
+              "worryDelta": -8,
+              "suspicionDelta": 8,
+              "factsSet": [],
+              "momReplyId": "mr_doctor0_fu_0"
+            },
+            {
+              "text": "The other kind. But I feel fine.",
+              "type": "TRUTH",
+              "tone": "VAGUE",
+              "worryDelta": 8,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": "mr_doctor0_fu_1"
+            },
+            {
+              "text": "I don't remember the exact date.",
+              "type": "DEFLECT",
+              "tone": "VAGUE",
+              "worryDelta": 5,
+              "suspicionDelta": 5,
+              "factsSet": [],
+              "momReplyId": "mr_doctor0_fu_2"
+            },
+            {
+              "text": "Okay. It's been a while. I've been avoiding it.",
+              "type": "TRUTH",
+              "tone": "OVERSHARE",
+              "worryDelta": 12,
+              "suspicionDelta": -5,
+              "factsSet": [],
+              "momReplyId": "mr_doctor0_fu_3"
+            }
+          ]
+        },
+        {
+          "text": "I don't have insurance right now. I'm looking into it.",
+          "type": "TRUTH",
+          "tone": "VAGUE",
+          "worryDelta": 20,
+          "suspicionDelta": -12,
+          "factsSet": [],
+          "momReplyId": "mr_doctor_r1"
+        },
+        {
+          "text": "I've been very healthy. I take vitamins. I read about my body.",
+          "type": "LIE",
+          "tone": "OVERSHARE",
+          "worryDelta": -5,
+          "suspicionDelta": 10,
+          "factsSet": [],
+          "momReplyId": "mr_doctor_r2"
+        },
+        {
+          "text": "I feel great. That's what matters.",
+          "type": "DEFLECT",
+          "tone": "CONFIDENT",
+          "worryDelta": 3,
+          "suspicionDelta": 5,
+          "factsSet": [],
+          "momReplyId": "mr_doctor_r3"
+        }
+      ]
+    }
+  ]
+}

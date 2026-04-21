@@ -1,0 +1,116 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="phone-frame" class="phone-frame">
+
+        <!-- STATUS BAR -->
+        <ui:VisualElement name="status-bar" class="status-bar">
+            <ui:VisualElement class="status-info">
+                <ui:VisualElement class="avatar">
+                    <ui:Label text="M" class="avatar-letter" />
+                </ui:VisualElement>
+                <ui:VisualElement class="contact-details">
+                    <ui:Label text="Mom" name="contact-name" class="contact-name" />
+                    <ui:Label text="&#x25CF; call in progress" class="call-status" />
+                </ui:VisualElement>
+                <ui:VisualElement class="call-meta">
+                    <ui:Label text="0:00" name="timer" class="timer" />
+                    <ui:Label text="Q 1/10" name="turn-label" class="turn-label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <!-- METER BAND -->
+            <ui:VisualElement class="meter-band">
+                <ui:VisualElement class="meter-row">
+                    <ui:Label name="worry-label" text="WORRY" class="meter-label" />
+                    <ui:VisualElement name="worry-track" class="meter-track">
+                        <ui:VisualElement name="worry-normal" class="meter-normal worry-color" />
+                        <ui:VisualElement name="worry-danger" class="meter-danger" />
+                        <ui:VisualElement class="danger-tick" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="meter-row meter-row-right">
+                    <ui:VisualElement name="sus-track" class="meter-track">
+                        <ui:VisualElement name="sus-normal" class="meter-normal sus-color" />
+                        <ui:VisualElement name="sus-danger" class="meter-danger" />
+                        <ui:VisualElement class="danger-tick" />
+                    </ui:VisualElement>
+                    <ui:Label name="sus-label" text="SUSPICION" class="meter-label meter-label-right" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- DANGER BANNER (hidden until a meter enters the red zone) -->
+        <ui:VisualElement name="danger-banner" class="danger-banner">
+            <ui:Label name="danger-banner-text" class="danger-banner-text" />
+        </ui:VisualElement>
+
+        <!-- CHAT AREA -->
+        <ui:ScrollView name="chat-scroll" class="chat-area"
+                        horizontal-scroller-visibility="Hidden"
+                        vertical-scroller-visibility="Hidden" />
+
+        <!-- TYPING INDICATOR (absolute, floats above response panel) -->
+        <ui:VisualElement name="typing-indicator" class="typing-indicator">
+            <ui:Label text="Mom" class="typing-name" />
+            <ui:VisualElement name="dot-0" class="dot" />
+            <ui:VisualElement name="dot-1" class="dot" />
+            <ui:VisualElement name="dot-2" class="dot" />
+        </ui:VisualElement>
+
+        <!-- RESPONSE PANEL -->
+        <ui:VisualElement name="response-panel" class="response-panel">
+            <ui:VisualElement class="tone-selector">
+                <ui:Button name="tone-0" class="tone-btn">
+                    <ui:Label text="CONFIDENT" class="tone-btn-title" />
+                </ui:Button>
+                <ui:Button name="tone-1" class="tone-btn">
+                    <ui:Label text="NEUTRAL" class="tone-btn-title" />
+                </ui:Button>
+                <ui:Button name="tone-2" class="tone-btn">
+                    <ui:Label text="HESITANT" class="tone-btn-title" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement name="response-buttons" class="response-buttons" />
+        </ui:VisualElement>
+
+        <!-- DIFFICULTY PANEL -->
+        <ui:VisualElement name="difficulty-panel" class="difficulty-panel">
+            <ui:VisualElement class="diff-header">
+                <ui:VisualElement class="diff-avatar">
+                    <ui:Label text="M" class="diff-avatar-letter" />
+                </ui:VisualElement>
+                <ui:VisualElement class="diff-header-text">
+                    <ui:Label text="Mom" class="diff-name" />
+                    <ui:Label text="incoming call" class="diff-status" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label text="HOW WORRIED IS SHE TODAY?" class="diff-prompt" />
+            <ui:VisualElement class="diff-buttons">
+                <ui:Button name="diff-0" class="diff-btn">
+                    <ui:VisualElement name="diff-strip-0" class="diff-btn-strip" />
+                    <ui:Label text="CHILL MOM"    class="diff-btn-name" />
+                </ui:Button>
+                <ui:Button name="diff-1" class="diff-btn">
+                    <ui:VisualElement name="diff-strip-1" class="diff-btn-strip" />
+                    <ui:Label text="TENSE MOM"    class="diff-btn-name" />
+                </ui:Button>
+                <ui:Button name="diff-2" class="diff-btn">
+                    <ui:VisualElement name="diff-strip-2" class="diff-btn-strip" />
+                    <ui:Label text="ANXIOUS MOM"  class="diff-btn-name" />
+                </ui:Button>
+                <ui:Button name="diff-3" class="diff-btn">
+                    <ui:VisualElement name="diff-strip-3" class="diff-btn-strip" />
+                    <ui:Label text="PANICKED MOM" class="diff-btn-name" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:Label text="&#x2014; press 1 · 2 · 3 · 4 to choose &#x2014;" class="diff-hint" />
+        </ui:VisualElement>
+
+        <!-- ENDING PANEL -->
+        <ui:VisualElement name="ending-panel" class="ending-panel">
+            <ui:Label name="ending-verdict" class="ending-verdict" />
+            <ui:Label name="ending-title"   class="ending-title"   />
+            <ui:Label name="ending-body"    class="ending-body"    />
+            <ui:Label text="&#x2014; press any key to play again &#x2014;" class="ending-hint" />
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

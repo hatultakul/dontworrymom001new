@@ -1,0 +1,725 @@
+{
+  "replies": [
+    {
+      "id": "mr_opener_r0",
+      "text": "Good. I worry when I can't reach you.",
+      "context": ""
+    },
+    {
+      "id": "mr_opener_r1",
+      "text": "No, no — I'll be quick. I just needed to hear your voice.",
+      "context": ""
+    },
+    {
+      "id": "mr_opener_r2",
+      "text": "I could tell. I always know when you're thinking about me.",
+      "context": ""
+    },
+    {
+      "id": "mr_opener_r3",
+      "text": "I'm fine, sweetheart. It's you I'm calling about.",
+      "context": ""
+    },
+    {
+      "id": "mr_closer_r0",
+      "text": "Okay. I believe you. Call me this weekend?",
+      "context": ""
+    },
+    {
+      "id": "mr_closer_r1",
+      "text": "Oh, honey. I miss you too. Come visit soon.",
+      "context": ""
+    },
+    {
+      "id": "mr_closer_r2",
+      "text": "That's — okay. Okay. Just keep me posted.",
+      "context": ""
+    },
+    {
+      "id": "mr_closer_r3",
+      "text": "I love you. That's enough. That's everything.",
+      "context": ""
+    },
+    {
+      "id": "mr_eat_r0",
+      "text": "Eggs and toast. Good. That's all I needed to know.",
+      "context": ""
+    },
+    {
+      "id": "mr_eat_r1",
+      "text": "Half a granola bar. I can't — okay. I'm not going to say anything.",
+      "context": ""
+    },
+    {
+      "id": "mr_eat_r2",
+      "text": "I can hear you chewing. That's new.",
+      "context": ""
+    },
+    {
+      "id": "mr_eat_r3",
+      "text": "I'm starting with it because I want to know.",
+      "context": ""
+    },
+    {
+      "id": "mr_sleep_r0",
+      "text": "Your father always said he slept best when he had no responsibilities. I didn't find that comforting then either.",
+      "context": ""
+    },
+    {
+      "id": "mr_sleep_r1",
+      "text": "Four in the morning. Doing what?",
+      "context": ""
+    },
+    {
+      "id": "mr_sleep_r2",
+      "text": "Fine as in fine or fine as in you don't want to talk about it?",
+      "context": ""
+    },
+    {
+      "id": "mr_sleep_r3",
+      "text": "I sleep fine. I worry instead. It takes up about the same amount of time.",
+      "context": ""
+    },
+    {
+      "id": "mr_apt_r0",
+      "text": "Very yours. Okay. And when's the last time you cleaned it?",
+      "context": ""
+    },
+    {
+      "id": "mr_apt_r1",
+      "text": "What does evolving mean? Evolving like how?",
+      "context": ""
+    },
+    {
+      "id": "mr_apt_r2",
+      "text": "Who is anyone.",
+      "context": ""
+    },
+    {
+      "id": "mr_apt_r3",
+      "text": "I heard something. From your cousin.",
+      "context": ""
+    },
+    {
+      "id": "mr_friends_r0",
+      "text": "Good. I was worried you were isolating.",
+      "context": ""
+    },
+    {
+      "id": "mr_friends_r1",
+      "text": "What does in your head mean? You can call me, you know.",
+      "context": ""
+    },
+    {
+      "id": "mr_friends_r2",
+      "text": "That sounds exhausting. Are you okay?",
+      "context": ""
+    },
+    {
+      "id": "mr_friends_r3",
+      "text": "People are busy. You're busy. I understand.",
+      "context": ""
+    },
+    {
+      "id": "mr_work_r0",
+      "text": "Your stride. Okay. What does that look like?",
+      "context": ""
+    },
+    {
+      "id": "mr_work_r1",
+      "text": "Freelancing. And is that — that's okay? That's stable?",
+      "context": ""
+    },
+    {
+      "id": "mr_work_r2",
+      "text": "More responsibility without a title change is how they get you, sweetheart.",
+      "context": ""
+    },
+    {
+      "id": "mr_work_r3",
+      "text": "I know how it is. That's why I'm asking.",
+      "context": ""
+    },
+    {
+      "id": "mr_bills_r0",
+      "text": "Autopay. Good. That's very adult of you.",
+      "context": ""
+    },
+    {
+      "id": "mr_bills_r1",
+      "text": "Manageable. Okay. What does manageable mean exactly.",
+      "context": ""
+    },
+    {
+      "id": "mr_bills_r2",
+      "text": "Color coding. Like a spreadsheet. With colors.",
+      "context": ""
+    },
+    {
+      "id": "mr_bills_r3",
+      "text": "The economy is insane. And yet rent is still due.",
+      "context": ""
+    },
+    {
+      "id": "mr_dating_r0",
+      "text": "Focusing on yourself. That's — that's healthy. I think.",
+      "context": ""
+    },
+    {
+      "id": "mr_dating_r1",
+      "text": "Oh! What's their name? What do they do?",
+      "context": ""
+    },
+    {
+      "id": "mr_dating_r2",
+      "text": "I didn't ask. I just asked if you were seeing someone.",
+      "context": ""
+    },
+    {
+      "id": "mr_dating_r3",
+      "text": "I'm your mother. This is what I do.",
+      "context": ""
+    },
+    {
+      "id": "mr_noise_r0",
+      "text": "You leave the TV on. For company. Okay.",
+      "context": ""
+    },
+    {
+      "id": "mr_noise_r1",
+      "text": "A roommate. And you didn't tell me? Is it a nice person?",
+      "context": ""
+    },
+    {
+      "id": "mr_noise_r2",
+      "text": "A podcast. Where someone talks. Yes. Those exist.",
+      "context": ""
+    },
+    {
+      "id": "mr_noise_r3",
+      "text": "It sounded like it was inside the room.",
+      "context": ""
+    },
+    {
+      "id": "mr_cousin_r0",
+      "text": "A whole thing. Right.",
+      "context": ""
+    },
+    {
+      "id": "mr_cousin_r1",
+      "text": "A little tight. Since when?",
+      "context": ""
+    },
+    {
+      "id": "mr_cousin_r2",
+      "text": "She told me because she was worried. That makes two of us.",
+      "context": ""
+    },
+    {
+      "id": "mr_cousin_r3",
+      "text": "She told me because she loves you. We all do.",
+      "context": ""
+    },
+    {
+      "id": "mr_plan_r0",
+      "text": "A five-year plan. Can I hear it?",
+      "context": ""
+    },
+    {
+      "id": "mr_plan_r1",
+      "text": "The beginning of a plan is still a plan. I'll take it.",
+      "context": ""
+    },
+    {
+      "id": "mr_plan_r2",
+      "text": "Seventeen. And which one is winning?",
+      "context": ""
+    },
+    {
+      "id": "mr_plan_r3",
+      "text": "Still becoming. You know I worry about that.",
+      "context": ""
+    },
+    {
+      "id": "mr_mall_r0",
+      "text": "The mall. At 2pm. For a client meeting.",
+      "context": ""
+    },
+    {
+      "id": "mr_mall_r1",
+      "text": "Oh, sweetheart. How long ago? Why didn't you call me?",
+      "context": ""
+    },
+    {
+      "id": "mr_mall_r2",
+      "text": "Don't blame Rachel. She called me because she cares.",
+      "context": ""
+    },
+    {
+      "id": "mr_mall_r3",
+      "text": "You work nights. Since when.",
+      "context": ""
+    },
+    {
+      "id": "mr_ex_r0",
+      "text": "Working on it. Meaning you're still together.",
+      "context": ""
+    },
+    {
+      "id": "mr_ex_r1",
+      "text": "Final. You're sure.",
+      "context": ""
+    },
+    {
+      "id": "mr_ex_r2",
+      "text": "The couch. He's sleeping on the couch.",
+      "context": ""
+    },
+    {
+      "id": "mr_ex_r3",
+      "text": "I know you're handling it. I just want to know how.",
+      "context": ""
+    },
+    {
+      "id": "mr_rent_r0",
+      "text": "Already paid. Good. Okay.",
+      "context": ""
+    },
+    {
+      "id": "mr_rent_r1",
+      "text": "I can send you something. Please let me send you something.",
+      "context": ""
+    },
+    {
+      "id": "mr_rent_r2",
+      "text": "I won't ask. But I want to ask.",
+      "context": ""
+    },
+    {
+      "id": "mr_rent_r3",
+      "text": "It's not handled if you won't tell me how.",
+      "context": ""
+    },
+    {
+      "id": "mr_school_r0",
+      "text": "Looking into it. Tell me when you know more.",
+      "context": ""
+    },
+    {
+      "id": "mr_school_r1",
+      "text": "Made peace. At 28.",
+      "context": ""
+    },
+    {
+      "id": "mr_school_r2",
+      "text": "Like a business. What kind of business.",
+      "context": ""
+    },
+    {
+      "id": "mr_school_r3",
+      "text": "Okay. Let's talk about something else.",
+      "context": ""
+    },
+    {
+      "id": "mr_doctor_r0",
+      "text": "Recently like last month, or recently like when I made you go three years ago?",
+      "context": ""
+    },
+    {
+      "id": "mr_doctor_r1",
+      "text": "No insurance. Okay. Okay. I'm breathing.",
+      "context": ""
+    },
+    {
+      "id": "mr_doctor_r2",
+      "text": "You read about your body. That's not the same as a doctor.",
+      "context": ""
+    },
+    {
+      "id": "mr_doctor_r3",
+      "text": "Feeling great is not a checkup.",
+      "context": ""
+    },
+    {
+      "id": "mr_soft_con_1",
+      "text": "Wait — I thought you said…",
+      "context": "soft_contradiction"
+    },
+    {
+      "id": "mr_soft_con_2",
+      "text": "Hmm. That's a little different from what you said before.",
+      "context": "soft_contradiction"
+    },
+    {
+      "id": "mr_soft_con_3",
+      "text": "Hold on. Earlier you told me —",
+      "context": "soft_contradiction"
+    },
+    {
+      "id": "mr_hard_con_1",
+      "text": "…",
+      "context": "hard_contradiction"
+    },
+    {
+      "id": "mr_hard_con_2",
+      "text": "That's not what you just said.",
+      "context": "hard_contradiction"
+    },
+    {
+      "id": "mr_ending_steady_1",
+      "text": "Okay, sweetheart. Okay. I love you.",
+      "context": "ending_steady"
+    },
+    {
+      "id": "mr_ending_steady_2",
+      "text": "I'll stop worrying. For now.",
+      "context": "ending_steady"
+    },
+    {
+      "id": "mr_ending_spiraling_1",
+      "text": "I'm booking a flight.",
+      "context": "ending_spiraling"
+    },
+    {
+      "id": "mr_ending_spiraling_2",
+      "text": "Don't tell me not to worry. I am going to worry.",
+      "context": "ending_spiraling"
+    },
+    {
+      "id": "mr_ending_caught_1",
+      "text": "I know, baby. I always know.",
+      "context": "ending_caught"
+    },
+    {
+      "id": "mr_ending_caught_2",
+      "text": "You don't have to pretend with me.",
+      "context": "ending_caught"
+    },
+    {
+      "id": "mr_ending_truth_1",
+      "text": "I'm proud of you. I don't say that enough.",
+      "context": "ending_truth"
+    },
+    {
+      "id": "mr_fallback",
+      "text": "Mmhm.",
+      "context": "fallback"
+    },
+    {
+      "id": "mr_closer_fu_0",
+      "text": "Sunday. I'll keep the phone close.",
+      "context": ""
+    },
+    {
+      "id": "mr_closer_fu_1",
+      "text": "Good. Then I'll stop worrying. For now.",
+      "context": ""
+    },
+    {
+      "id": "mr_closer_fu_2",
+      "text": "Unpredictable means what.",
+      "context": ""
+    },
+    {
+      "id": "mr_closer_fu_3",
+      "text": "Okay. Okay. I'll be here.",
+      "context": ""
+    },
+    {
+      "id": "mr_sleep2_fu_0",
+      "text": "You don't have to explain. I just need to know.",
+      "context": ""
+    },
+    {
+      "id": "mr_sleep2_fu_1",
+      "text": "I'm not reading into it. You called it complicated.",
+      "context": ""
+    },
+    {
+      "id": "mr_sleep2_fu_2",
+      "text": "That's not a no.",
+      "context": ""
+    },
+    {
+      "id": "mr_sleep2_fu_3",
+      "text": "Okay. I'm here when you do.",
+      "context": ""
+    },
+    {
+      "id": "mr_apt0_fu_0",
+      "text": "Good. That's all I needed to hear.",
+      "context": ""
+    },
+    {
+      "id": "mr_apt0_fu_1",
+      "text": "Okay. Good. I didn't say anything.",
+      "context": ""
+    },
+    {
+      "id": "mr_apt0_fu_2",
+      "text": "What does that mean, that kind of mess.",
+      "context": ""
+    },
+    {
+      "id": "mr_apt0_fu_3",
+      "text": "I can come down. I'll bring supplies.",
+      "context": ""
+    },
+    {
+      "id": "mr_friends2_fu_0",
+      "text": "Managing isn't the same as okay.",
+      "context": ""
+    },
+    {
+      "id": "mr_friends2_fu_1",
+      "text": "You don't sound like you love it.",
+      "context": ""
+    },
+    {
+      "id": "mr_friends2_fu_2",
+      "text": "That's a no.",
+      "context": ""
+    },
+    {
+      "id": "mr_friends2_fu_3",
+      "text": "I knew it. I could hear it.",
+      "context": ""
+    },
+    {
+      "id": "mr_dating1_fu_0",
+      "text": "Alex. Okay. And they treat you well?",
+      "context": ""
+    },
+    {
+      "id": "mr_dating1_fu_1",
+      "text": "You've been seeing someone and you don't know what they do?",
+      "context": ""
+    },
+    {
+      "id": "mr_dating1_fu_2",
+      "text": "Fine. I can wait.",
+      "context": ""
+    },
+    {
+      "id": "mr_dating1_fu_3",
+      "text": "So it's really new. Okay. Okay.",
+      "context": ""
+    },
+    {
+      "id": "mr_noise1_fu_0",
+      "text": "Good. What's their name?",
+      "context": ""
+    },
+    {
+      "id": "mr_noise1_fu_1",
+      "text": "You not mentioning things is always a big deal to me.",
+      "context": ""
+    },
+    {
+      "id": "mr_noise1_fu_2",
+      "text": "How fast is fast.",
+      "context": ""
+    },
+    {
+      "id": "mr_noise1_fu_3",
+      "text": "I wouldn't have — okay. I would have had questions.",
+      "context": ""
+    },
+    {
+      "id": "mr_cousin1_fu_0",
+      "text": "A couple of months. And you didn't say anything.",
+      "context": ""
+    },
+    {
+      "id": "mr_cousin1_fu_1",
+      "text": "What thing.",
+      "context": ""
+    },
+    {
+      "id": "mr_cousin1_fu_2",
+      "text": "That's not an answer.",
+      "context": ""
+    },
+    {
+      "id": "mr_cousin1_fu_3",
+      "text": "What happened. Tell me.",
+      "context": ""
+    },
+    {
+      "id": "mr_plan0_fu_0",
+      "text": "An overview. Okay. When.",
+      "context": ""
+    },
+    {
+      "id": "mr_plan0_fu_1",
+      "text": "A direction is something. That's something.",
+      "context": ""
+    },
+    {
+      "id": "mr_plan0_fu_2",
+      "text": "Variables like what.",
+      "context": ""
+    },
+    {
+      "id": "mr_plan0_fu_3",
+      "text": "I know. I could tell.",
+      "context": ""
+    },
+    {
+      "id": "mr_plan2_fu_0",
+      "text": "You think, or you know.",
+      "context": ""
+    },
+    {
+      "id": "mr_plan2_fu_1",
+      "text": "Pick one. Any one. Just start.",
+      "context": ""
+    },
+    {
+      "id": "mr_plan2_fu_2",
+      "text": "That's honest, at least.",
+      "context": ""
+    },
+    {
+      "id": "mr_plan2_fu_3",
+      "text": "That's not a plan. That's just living.",
+      "context": ""
+    },
+    {
+      "id": "mr_mall1_fu_0",
+      "text": "Okay. Okay. That makes sense.",
+      "context": ""
+    },
+    {
+      "id": "mr_mall1_fu_1",
+      "text": "Worrying me and worrying yourself aren't the same thing.",
+      "context": ""
+    },
+    {
+      "id": "mr_mall1_fu_2",
+      "text": "That's not an answer, sweetheart.",
+      "context": ""
+    },
+    {
+      "id": "mr_mall1_fu_3",
+      "text": "I wouldn't have — okay. I would have panicked a little.",
+      "context": ""
+    },
+    {
+      "id": "mr_doctor0_fu_0",
+      "text": "This year is a big window.",
+      "context": ""
+    },
+    {
+      "id": "mr_doctor0_fu_1",
+      "text": "Feeling fine is not a checkup.",
+      "context": ""
+    },
+    {
+      "id": "mr_doctor0_fu_2",
+      "text": "Nobody forgets a doctor's visit that recently.",
+      "context": ""
+    },
+    {
+      "id": "mr_doctor0_fu_3",
+      "text": "We're finding you a doctor this week.",
+      "context": ""
+    },
+    {
+      "id": "mr_apt_r2_fu_0",
+      "text": "Your roommate. I see."
+    },
+    {
+      "id": "mr_apt_r2_fu_1",
+      "text": "That's what I thought. Thank you."
+    },
+    {
+      "id": "mr_apt_r2_fu_2",
+      "text": "Your neighbor has a key. That's interesting."
+    },
+    {
+      "id": "mr_apt_r2_fu_3",
+      "text": "People. Right."
+    },
+    {
+      "id": "mr_apt_r3_fu_0",
+      "text": "She was worried. That's not nothing."
+    },
+    {
+      "id": "mr_apt_r3_fu_1",
+      "text": "She said it sounded like a lot to handle."
+    },
+    {
+      "id": "mr_apt_r3_fu_2",
+      "text": "Fine like how."
+    },
+    {
+      "id": "mr_apt_r3_fu_3",
+      "text": "I'll be the judge of that."
+    },
+    {
+      "id": "mr_noise_r3_fu_0",
+      "text": "Right. Old building."
+    },
+    {
+      "id": "mr_noise_r3_fu_1",
+      "text": "Okay. And are you — okay?"
+    },
+    {
+      "id": "mr_noise_r3_fu_2",
+      "text": "Your laptop mic. Okay."
+    },
+    {
+      "id": "mr_noise_r3_fu_3",
+      "text": "I'm listening. That's what I do."
+    },
+    {
+      "id": "mr_rent_r3_fu_0",
+      "text": "A little help from who."
+    },
+    {
+      "id": "mr_rent_r3_fu_1",
+      "text": "Which friend. Are they okay with that."
+    },
+    {
+      "id": "mr_rent_r3_fu_2",
+      "text": "Okay. Okay. Good."
+    },
+    {
+      "id": "mr_rent_r3_fu_3",
+      "text": "That's not an answer."
+    },
+    {
+      "id": "mr_cousin_r2_fu_0",
+      "text": "She didn't worry over nothing."
+    },
+    {
+      "id": "mr_cousin_r2_fu_1",
+      "text": "Mutually. And who's helping you."
+    },
+    {
+      "id": "mr_cousin_r2_fu_2",
+      "text": "I don't think she did."
+    },
+    {
+      "id": "mr_cousin_r2_fu_3",
+      "text": "That's not how worrying works."
+    },
+    {
+      "id": "mr_bills_r3_fu_0",
+      "text": "Barely isn't ideal."
+    },
+    {
+      "id": "mr_bills_r3_fu_1",
+      "text": "Working on it like how."
+    },
+    {
+      "id": "mr_bills_r3_fu_2",
+      "text": "You didn't have autopay before."
+    },
+    {
+      "id": "mr_bills_r3_fu_3",
+      "text": "Okay. Good. Keep me posted."
+    }
+  ]
+}
