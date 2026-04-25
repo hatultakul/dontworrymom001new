@@ -1,6 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements">
     <ui:VisualElement name="phone-frame" class="phone-frame">
 
+        <!-- TOP ACCENT BAR -->
+        <ui:VisualElement class="phone-top-bar" />
+
         <!-- STATUS BAR -->
         <ui:VisualElement name="status-bar" class="status-bar">
             <ui:VisualElement class="status-info">
@@ -43,9 +46,12 @@
         </ui:VisualElement>
 
         <!-- CHAT AREA -->
-        <ui:ScrollView name="chat-scroll" class="chat-area"
-                        horizontal-scroller-visibility="Hidden"
-                        vertical-scroller-visibility="Hidden" />
+        <ui:VisualElement class="chat-area-wrap">
+            <ui:ScrollView name="chat-scroll" class="chat-area"
+                            horizontal-scroller-visibility="Hidden"
+                            vertical-scroller-visibility="Hidden" />
+            <ui:VisualElement class="chat-fade" />
+        </ui:VisualElement>
 
         <!-- TYPING INDICATOR (absolute, floats above response panel) -->
         <ui:VisualElement name="typing-indicator" class="typing-indicator">
@@ -102,6 +108,11 @@
                 </ui:Button>
             </ui:VisualElement>
             <ui:Label text="&#x2014; press 1 · 2 · 3 · 4 to choose &#x2014;" class="diff-hint" />
+        </ui:VisualElement>
+
+        <!-- HOME INDICATOR -->
+        <ui:VisualElement class="phone-home-bar">
+            <ui:VisualElement class="phone-home-pill" />
         </ui:VisualElement>
 
         <!-- ENDING PANEL -->

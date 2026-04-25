@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Don't Worry, Mom 001.slnx"
+    "dotnet.defaultSolution": "DontWorryMom001.slnx"
 }

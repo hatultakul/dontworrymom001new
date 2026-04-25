@@ -11,6 +11,47 @@
     background-color: rgb(5, 5, 15);
     flex-direction: column;
     overflow: hidden;
+    border-radius: 36px;
+    border-width: 1px;
+    border-color: rgba(25, 25, 56, 0.8);
+}
+
+.phone-top-bar {
+    height: 5px;
+    flex-shrink: 0;
+    background-color: rgba(61, 199, 170, 0.18);
+}
+
+.phone-home-bar {
+    height: 20px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.phone-home-pill {
+    width: 80px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgba(140, 140, 180, 0.5);
+}
+
+/* ── CHAT AREA WRAPPER (holds scroll + fade overlay) ─────── */
+
+.chat-area-wrap {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.chat-fade {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    background-color: rgba(5, 5, 15, 0);
 }
 
 /* ── STATUS BAR ──────────────────────────────────────────── */
@@ -196,6 +237,11 @@
     flex: 1;
     background-color: rgb(6, 6, 16);
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 /* ── TYPING INDICATOR ────────────────────────────────────── */
